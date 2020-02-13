@@ -1,0 +1,157 @@
+body {
+margin: 0;
+padding: 0;
+font-family: Cairo;
+}
+
+nav{
+  height:68px;
+  width:100vw;
+  background-color: rgb(43, 43, 43);
+
+}
+
+/* logo */
+nav img{
+  display: block;
+  position:absolute;
+  left: 20px;
+  top: 1vh;
+}
+
+/* logo text */
+nav .logo-title{
+  font-family: Pacifico;
+  color:white;
+  position:absolute;
+  left:70px;
+  top:15px;
+  height:45px;
+  width:70px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+/* list of all the libraries */
+aside{
+  width:30vw;
+  position:fixed;
+  right:0;
+  height:100%;
+  top:8vh;
+  overflow-y: auto; 
+  scroll-behavior: smooth;
+  
+}
+
+/* library name */
+ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+/* class list items inside ul */
+.parent_list{
+cursor: pointer;
+padding:1rem;
+margin:0 .5rem .5rem .5rem;
+background-color: rgb(238, 238, 238) ;
+border-radius: .5rem;
+transition-duration: .2s;
+
+}
+
+.parent_list:hover{
+  transform: scale(1.01);
+  box-shadow: 3px 3px 10px rgb(158, 157, 157);
+  background-color: rgb(248, 248, 248);
+  
+}
+
+/* class of the library name */
+.parent{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.parent p{
+  padding-left:.5rem;
+}
+
+/* timings of the library */
+.info{
+  position:relative;
+  right:-1000px;
+  transition-duration: .4s;
+  height:0;
+}
+
+/* class of library timings when list is open */
+.info_open{
+  margin-top:1rem;
+  display: grid;
+  padding:1rem;
+  margin:auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  transition-duration: .4s;
+  max-width: 60ch;
+}
+
+.info_open div{
+  padding:.3rem;
+  border-bottom: 1px solid gray;
+}
+
+/* timings when library is open */
+.open_time{
+  color:green;
+  text-align: center;
+}
+
+/* timings when library is closed */
+.close_time{
+  color:red;
+  text-align: center;
+}
+
+#map { 
+  position: absolute;
+  bottom: 0;
+  height:92vh;
+  width: 70vw;
+}
+
+
+#locateMe {
+position: absolute;
+z-index: 2; 
+top:70px; 
+left:5px;
+}
+
+@media screen and (orientation:portrait)
+{
+  
+  aside{
+    position: absolute;
+    top:52vh;
+    bottom: 0;
+    width:100vw;
+    height:45vh;
+    margin:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+
+  }
+  #map{
+    position: absolute;
+    bottom: unset;
+    height:42.5vh;
+    width:100vw;
+
+  }
+}
