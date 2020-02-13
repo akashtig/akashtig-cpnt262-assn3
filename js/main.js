@@ -82,10 +82,8 @@ fetch(url)
 
       list+=`</ul>`
       document.querySelector('aside').innerHTML=list
-      console.log(geojson)
      
 
-      console.log(`#${homeList[0]}`)
 
       let j=0
       for(x of geojson)
