@@ -38,7 +38,7 @@ aside{
   position:fixed;
   right:0;
   height:100%;
-  top:8vh;
+  top:75px;
   overflow-y: auto; 
   scroll-behavior: smooth;
   
@@ -118,10 +118,11 @@ transition-duration: .2s;
 }
 
 #map { 
-  position: absolute;
   bottom: 0;
-  height:92vh;
+  height:91vh;
   width: 70vw;
+  
+  margin-top:7px ;
 }
 
 
